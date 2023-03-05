@@ -1,0 +1,17 @@
+current directory: /home/wesley-waka/stnhd/.bundle/ruby/2.7.0/gems/thin-1.8.1/ext/thin_parser
+/home/wesley-waka/.rvm/rubies/ruby-2.7.4/bin/ruby -I /home/wesley-waka/.rvm/rubies/ruby-2.7.4/lib/ruby/site_ruby/2.7.0 extconf.rb
+checking for main() in -lc... yes
+creating Makefile
+
+current directory: /home/wesley-waka/stnhd/.bundle/ruby/2.7.0/gems/thin-1.8.1/ext/thin_parser
+make DESTDIR\= sitearchdir\=./.gem.20230305-33340-1slcegq sitelibdir\=./.gem.20230305-33340-1slcegq clean
+
+current directory: /home/wesley-waka/stnhd/.bundle/ruby/2.7.0/gems/thin-1.8.1/ext/thin_parser
+make DESTDIR\= sitearchdir\=./.gem.20230305-33340-1slcegq sitelibdir\=./.gem.20230305-33340-1slcegq
+compiling parser.c
+compiling thin.c
+linking shared-object thin_parser.so
+
+current directory: /home/wesley-waka/stnhd/.bundle/ruby/2.7.0/gems/thin-1.8.1/ext/thin_parser
+make DESTDIR\= sitearchdir\=./.gem.20230305-33340-1slcegq sitelibdir\=./.gem.20230305-33340-1slcegq install
+/usr/bin/install -m 0755 thin_parser.so ./.gem.20230305-33340-1slcegq

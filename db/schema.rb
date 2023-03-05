@@ -10,37 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_02_28_122734) do
+ActiveRecord::Schema.define(version: 2023_03_01_030959) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-  enable_extension "timescaledb"
-
-  create_table "events", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "hackathon_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+  create_table "categories", force: :cascade do |t|
+    t.string "category"
   end
 
-  create_table "hackathons", force: :cascade do |t|
-    t.string "image_url"
-    t.string "topic"
+  create_table "companies", force: :cascade do |t|
+    t.string "name"
+  end
+
+  create_table "furnitures", force: :cascade do |t|
+    t.string "name"
+    t.integer "price"
+    t.string "image"
     t.string "description"
-    t.string "location"
-    t.string "datetime"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string "fullname"
-    t.string "email"
-    t.string "phonenumber"
-    t.string "language"
-    t.string "roles"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.string "shipping"
+    t.integer "category_id"
+    t.integer "company_id"
+    t.boolean "featured"
   end
 
 end
